@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scal=1.0, width=dvice-width, height=device-height">
+        <title>Timer</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Timer</h1>
+        </header>
+
+        <section>
+            <div class="timer">
+                <div class="hour">
+                    <p id="timer_hour">00</p>
+                </div>
+                <div class="colon"><p>:</p></div>
+                <div class="minute">
+                    <p id="timer_minute">00</p>
+                </div>
+                <div class="colon"><p>:</p></div>
+                <div class="second">
+                    <p id="timer_second">00</p>
+                </div>
+            </div>
+            <div class="button-container">
+                <div class="start-button"><p>start</p></div>
+                <div class="stop-button"><p>stop</p></div>
+                <div class="reset-button"><p>reset</p></div>
+            </div>
+        </section>
+
+        <div class="popup" id="timePopup">
+            <div class="popup-content">
+                <label>Hours: <input type="number" id="inputHour" min="0" max="23"></label><br>
+                <label>Minutes: <input type="number" id="inputMinute" min="0" max="59"></label><br>
+                <label>Seconds: <input type="number" id="inputSecond" min="0" max="59"></label><br>
+                <button id="setTime">Set Time</button>
+                <button id="cancel">Cancel</button>
+            </div>
+        </div>
+        <div class="background">
+            <div class="bar">
+                <div class="bar-fill"></div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="timerLogic.js"></script>
+    </body>
+</html>

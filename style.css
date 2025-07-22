@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'Ethereal';
+    src: url(fonts/EtherealDemo-Regular.otf);
+}
+
+* {
+    font-family: 'Ethereal';
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+header {
+    overflow: hidden;
+
+    background-color: #b0c4de;
+
+    margin: 0;
+}
+
+header h1 {
+    color: white;
+    font-size: 40px;
+    font-style: normal;
+    text-align: center;
+
+    padding: 20px;
+}
+
+section {
+    overflow: hidden;
+
+    background-color: #eaf6ff;
+
+    margin: 0;
+
+    content: "";
+    clear: both;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.timer {
+    color: #091625;
+    font-size: 120px;
+    font-style: normal;
+    text-align: left;
+    margin: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.button-container {
+    border: none;
+}
+
+.start-button {
+    border-radius: 10px;
+    border: 0.5px solid black;
+    background-color: #b0c4de;
+    text-align: center;
+
+    width: 100px;
+
+    padding: 10px;
+    margin: 20px;
+}
+
+.start-button p {
+    font-size: 20px;
+    font-style: normal;
+    color: #091625;
+
+    padding: 0;
+    margin: 0;
+}
+
+.stop-button {
+    display: none;
+
+    border-radius: 10px;
+    border: 0.5px solid black;
+    background-color: #f09393;
+    text-align: center;
+
+    width: 100px;
+
+    padding: 10px;
+    margin: 20px;
+}
+
+.stop-button p {
+    font-size: 20px;
+    font-style: normal;
+    color: #091625;
+
+    padding: 0;
+    margin: 0;
+}
+
+.reset-button {
+    border-radius: 10px;
+    border: 0.5px solid black;
+    background-color: white;
+    text-align: center;
+
+    width: 100px;
+
+    padding: 10px;
+    margin: 20px;
+}
+
+.reset-button p {
+    font-size: 20px;
+    font-style: normal;
+    color: #091625;
+
+    padding: 0;
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.popup-content input {
+    width: 50px;
+    margin: 5px;
+}
+
+.background {
+    background-color: #eaf6ff;
+    overflow: hidden;
+
+    height: 100vh;
+
+    margin: 0;
+    padding: 0;
+}
+
+.bar {
+    width: calc(100vw - 20px);
+    height: 30px;
+
+    background-color: lightgrey;
+
+    padding: 0;
+    margin: 10px;
+}
+
+.bar-fill {
+    height: 100%;
+    width: 100%;
+    background-color: #b0c4de;
+    transition: width 1s linear;
+}
